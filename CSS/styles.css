@@ -11,7 +11,12 @@ body, h1, ul {
     margin: 0;
     padding: 0;
 }
-
+.SgnUmtn{
+    background-color: #fff;
+    width: 7px;
+    height: 70px;
+    border-radius: 4px;
+}
 header {
     background-color: #62b3d8;
     color: #fff;
@@ -21,11 +26,20 @@ header {
     justify-content: start;
     align-items: center;
     width: 100%;
-    height: 10vh;
+    height: 8vh;
     margin-top: 0;
-    margin-bottom: 80vhpx;
 }
 
+a{
+    color:white;
+    text-decoration: none;
+    font-size: 45px;
+    margin:3vw;
+}
+a:hover{
+    color:white;
+    text-decoration: none;
+}
 .ImgTxtPar{
     display: flex;
     flex-direction: row;
@@ -121,21 +135,6 @@ main{
     }
 }
 
-@keyframes slideFromRight {
-    0% {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    50% {
-        transform: translateX(-1%);
-        opacity: 1;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
 @media screen and (max-width: 1200px) {
     .ErImgMain{
         height: 60vh;
@@ -171,5 +170,13 @@ main{
         max-width: 1000px;
         padding: 20px;
         margin-left: 40px;
+
+        animation-duration: 4s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        animation-name: slideFromLeft;
     }    
+    .ImgTxtPar{
+        margin-top: 5vh;
+    }
 }
